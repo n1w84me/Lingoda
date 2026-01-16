@@ -1,3 +1,5 @@
+![Theme Preview](screenshot.png)
+
 # Lingoda Blogger Theme 🚀
 
 A lightweight, SEO-optimized Blogger (Blogspot) theme built using strict **XHTML** and **XML** structures. This project is designed for users who want a clean, fast-loading interface with modern features while maintaining compatibility with the Blogger engine.
