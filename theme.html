@@ -20,7 +20,7 @@
         <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:view.title.escaped/>&quot;,&quot;url&quot;:&quot;<data:view.url.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;<data:view.url.canonical/>search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}</script>
 
       </b:if>  
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'/>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
@@ -1124,35 +1124,19 @@ body.error_page .main-post {
 .BlogArchive .hierarchical li a {
     text-decoration: none !important;
 }
-/* Kontrast-Fix: Mobile Titel auf Schwarz setzen */
-h3.mobile-index-title, 
-h3.mobile-index-title a {
-    color: #000000  /* Erzwingt sattes Schwarz */
-    text-decoration: none;
-}
-
-/* Optional: Farbe beim Anklicken (Hover) auf ein dunkles Grau setzen */
-h3.mobile-index-title a:hover {
-    color: #333333 !important;
-}
-
-/* Global Link Styling - Excluding Menu */
-a:not(.menu-wrap a):link, 
-a:not(.menu-wrap a):visited {
-  color: #2c3e50 !important;
-  text-decoration: none !important;
-}
-
-a:not(.menu-wrap a):hover {
+a:hover {
   text-decoration: underline !important;
+}
+/* Restore Menu Link Color */
+#menu a {
+  color: #fff !important;
 }
 /* Mobile Home Button Color */
 #blog-pager-home-link.mobile-link-button, 
- mobile-link-button a {
+.mobile-link-button a {
   background-color: #2c3e50 !important;
   color: #ffffff !important;
 }
-
 ]]></b:skin>
    
 <b:template-skin><![CDATA[
@@ -1577,8 +1561,6 @@ width:100%;
 
 ]]></b:template-skin>  
 
-  </head>
-
 
  <script type='text/javascript'>
   /*<![CDATA[*/
@@ -1637,9 +1619,7 @@ form {
     position: relative;
 }
 </style>
-
-
-
+</head>
   <body expr:class='data:blog.pageType'>
     <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
       <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar' version='1'>
@@ -1836,7 +1816,7 @@ head.appendChild(script);
   <li><a href='https://lingoda.quenoticias.info/p/about-us.html'>About us</a>
   <ul class='menus'> 
     <li><a href='https://lingoda.quenoticias.info/p/privacy-policy.html'>Privacy Policy</a></li>
-    <li><a href='hhttps://lingoda.quenoticias.info/p/terms-of-service.html'>Terms of Service</a></li>
+    <li><a href='https://lingoda.quenoticias.info/p/terms-of-service.html'>Terms of Service</a></li>
     <li><a href='https://lingoda.quenoticias.info/p/disclaimer-for-lingoda-leaks.html'>Disclaimer</a></li>
     <li><a href='https://lingoda.quenoticias.info/p/our-team.html'>Our Team</a></li>
   </ul>
@@ -1847,7 +1827,7 @@ head.appendChild(script);
 <div class='search-bar'>
   <div class='header' id='search-logo'>
  <style>
-* {
+.search-bar form * {
  box-sizing: border-box;
 }
 form {
@@ -3111,7 +3091,7 @@ var summary_chars = 40;</script>
 <style type="text/css">
 img.recent-post-thumb{padding:2px;width:30%;height:65px;float:left;    margin-right: 7%;}
 .recent-posts-container {font-family:'Oswald', sans-serif;font-size:12px;}
-ul.recent-posts-container li{line-height: 0.4;list-style-type: none;font-size:12px;float:left;width:100%}
+ul.recent-posts-container li{line-height: 1.4;list-style-type: none;font-size:12px;float:left;width:100%}
 ul.recent-posts-container {counter-reset: countposts;list-style-type:none;padding:0;}
 ul.recent-posts-container li:before {content: counter(countposts,decimal);counter-increment: countposts;z-index: 1;position:absolute;display:none;left: 0px; font-size: 13px;font-weight: bold;color: #fff;background: #69B7E2;line-height:25px;height:25px;width:25px;text-align:center;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
 .recent-posts-container a{text-decoration:none;}
@@ -3386,7 +3366,7 @@ var summary_chars = 40;</script>
 <style type="text/css">
 img.recent-post-thumb{padding:2px;width:30%;height:65px;float:left;    margin-right: 7%;}
 .recent-posts-container {font-family:'Oswald', sans-serif;font-size:12px;}
-ul.recent-posts-container li{line-height: 0.4;list-style-type: none;font-size:12px;float:left;width:100%}
+ul.recent-posts-container li{line-height: 1.4;list-style-type: none;font-size:12px;float:left;width:100%}
 ul.recent-posts-container {counter-reset: countposts;list-style-type:none;padding:0;}
 ul.recent-posts-container li:before {content: counter(countposts,decimal);counter-increment: countposts;z-index: 1;position:absolute;display:none;left: 0px; font-size: 13px;font-weight: bold;color: #fff;background: #69B7E2;line-height:25px;height:25px;width:25px;text-align:center;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
 .recent-posts-container a{text-decoration:none;}
